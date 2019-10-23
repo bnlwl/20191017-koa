@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<link rel="stylesheet" href="./index.css">-->
+</head>
+<body>
+<div class="header">
+    <% for (let i = 0;i < banners.length;i++) { const item = banners[i] %>
+    <div class="title">
+        <%= item.title %>
+    </div>
+    <div class="sub_title">
+        <%= item.sub_title %>
+    </div>
+    <img class="src" src="<%= item.src %>" alt="">
+    <% } %>
+</div>
+<div class="body">
+    <% for (let i = 0; i < articles.length;i++) { const item = articles[i] %>
+    <a href="/article?id=<%= item.ID %>">
+        文章<%= item.ID %> :
+        <div class="article_title">标题：<%= item.title %></div>
+        <div class="content">摘要：<%= item.summary %></div>
+    </a>
+    <br/>
+    <% } %>
+</div>
+<div class="footer">1</div>
+</body>
+</html>

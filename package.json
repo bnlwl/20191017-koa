@@ -1,0 +1,34 @@
+{
+  "dependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "consolidate": "^0.15.1",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-beta.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-static": "^1.2.6",
+    "formidable": "^1.2.1",
+    "koa": "^2.6.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-multer": "^1.0.2",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa2-cors": "^2.0.6",
+    "koa2-upload": "^1.0.3",
+    "mongoose": "^5.7.6",
+    "multer": "^1.4.1",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.19.4",
+    "path": "^0.12.7",
+    "superagent": "^4.1.0",
+    "tesseract.js": "^1.0.14",
+    "uuid": "^3.3.2"
+  },
+  "scripts": {
+    "koa": "nodemon ./src/koa/start.js",
+    "express": "node ./src/express/server.js"
+  }
+}

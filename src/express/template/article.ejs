@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div class="author"><%= articleData.author %></div>
+<img src="<%= articleData.author_src %>" alt="">
+<br/>
+<div class="time"><%= articleData.content %></div>
+<div class="time"><%= articleData.sDate %></div>
+<a class="n_like" href="/article?id=<%= articleData.ID %>&act=like"><%= articleData.n_like %></a>
+</body>
+</html>
