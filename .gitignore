@@ -4,3 +4,6 @@ deploy_versions/
 .rn_temp/
 node_modules/
 .DS_Store
+chi_sim.traineddata
+chi_tra.traineddata
+eng.traineddata
