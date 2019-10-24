@@ -1,7 +1,10 @@
 import mongo from '../db';
 import Router from 'koa-router';
 
-const listSchema = new mongo.Schema({name: {type: String}, age: {type: String}});
+const listSchema = new mongo.Schema({
+  name: {type: String},
+  age: {type: String}
+});
 const list = mongo.db.model('list', listSchema);
 
 const router = new Router();
@@ -15,7 +18,7 @@ async function getList(ctx) {
   const query = ctx.request.query;
   const pageNum = Number(query.pageNum) || 1;
   const pageSize = Number(query.pageSize) || 10;
-  const data = await list.find();
+  const data = await list.find({});
   // .limit(pageSize)
   // .skip((pageNum - 1) * pageSize)
   // // .select('name')
